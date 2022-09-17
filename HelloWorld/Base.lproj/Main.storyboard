@@ -34,6 +34,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Show Greeting">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="greetingButtonWasTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="RXy-xE-uxG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -46,6 +49,10 @@
                             <constraint firstItem="LYq-6S-mFD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z52-JK-Erx"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greetingButton" destination="LYq-6S-mFD" id="bCe-y2-W0v"/>
+                        <outlet property="greetingLabel" destination="t7x-Hq-yyu" id="NVE-AK-3ky"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
